@@ -1,10 +1,10 @@
 import { App } from '@agio/framework/core';
-import { ExampleController } from './controllers/example/example.controller';
+import { DogsController } from './controllers/dogs/dogs.controller';
 
 const app = new App(
     {
         controllers: [
-            ExampleController
+            DogsController,
         ]
     }
 );

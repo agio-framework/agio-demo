@@ -20,7 +20,13 @@
     },
 
     "databases": {
-
+        "db-dogs": {
+            "uri": "mysql://root:1234567890@localhost/dogs",
+            "options": {
+                "logging": false,
+                "force": true
+            }
+        }
     },
     
     "my-others-confs": {
