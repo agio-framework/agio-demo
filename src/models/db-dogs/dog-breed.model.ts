@@ -10,6 +10,7 @@ import { SQLSchema, SQLDataTypes } from '@agio/framework/database';
         },
         name: {
             type: SQLDataTypes.STRING,
+            unique: true,
             allowNull: false,
         }
     },

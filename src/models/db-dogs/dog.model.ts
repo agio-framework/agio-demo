@@ -12,6 +12,17 @@ import { SQLSchema, SQLDataTypes } from "@agio/framework/database";
             type: SQLDataTypes.STRING,
             allowNull: false,
         },
+        bornAt: {
+            type: SQLDataTypes.DATE,
+            allowNull: true,
+        },
+        ownerId: {
+            type: SQLDataTypes.STRING,
+            allowNull: true,
+            validate: {
+                is: /^[0-9a-fA-F]{24}$/
+            }
+        },
     },
     {
         timestamps: true,

@@ -14,6 +14,10 @@ export class DogValidator {
     } 
 
     public body: ValidatorSchema = {
+        bornAt: {
+            type: Date,
+            less: 'now',
+        },
         name: {
             type: String,
             required: true,

@@ -1,4 +1,4 @@
-import { SQLModel, Model } from '@agio/framework/database';
+import { SQLModel, Model, MongoModel } from '@agio/framework/database';
 
 import { IDogBreed } from '../../interfaces/dogs/dog-breed.interface';
 import { IDog } from '../../interfaces/dogs/dog.interface';
@@ -12,6 +12,10 @@ export class DogsService {
 
     @Model('db-dogs', 'Dogs')
     private dogModel: SQLModel<IDog>;
+
+
+    @Model('db-owner', 'Owners')
+    private dogOwner: MongoModel<any>;
 
 
     /**
@@ -28,12 +32,21 @@ export class DogsService {
     /**
      * Return specific dog by your id including your breed
      */
-    public getDogById = (dogId: string) => this.dogModel.findByPk(dogId, {
-        include: [{
-            model: this.dogBreedsModel,
-            as: 'breed'
-        }]
-    });
+    public async getDogById(dogId: string) {
+
+        const dog = await this.dogModel.findByPk(dogId, {
+            include: [{
+                model: this.dogBreedsModel,
+                as: 'breed'
+            }]
+        });
+
+        if (!dog) return;
+        else if (dog.ownerId) dog.setDataValue('owner', await this.dogOwner.findById(dog.ownerId, ['name', 'city']))
+
+        return dog;
+
+    };
 
 
     /**

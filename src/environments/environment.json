@@ -25,6 +25,19 @@
             "options": {
                 "logging": false,
                 "force": true
+            },
+            "seeds": {
+                "Dogs": "dogs.seed.json",
+                "DogBreeds": "dog-breeds.seed.json"
+            }
+        },
+        "db-owner": {
+            "uri": "mongodb://localhost:27017/db-owners",
+            "options": {
+                "useUnifiedTopology": true
+            },
+            "seeds": {
+                "Owners": "owners.seed.json"
             }
         }
     },

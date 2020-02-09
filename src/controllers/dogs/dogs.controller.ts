@@ -24,7 +24,7 @@ export class DogsController {
      *
      * @param req
      */
-    @Get('/:id', [DogValidator])
+    @Get('/:id')
     public async readOne(req: Request) {
 
         const dog = await this.dogsService.getDogById(req.params.id);
