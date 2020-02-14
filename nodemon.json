@@ -1,0 +1,16 @@
+{
+    "ext": "js json ts",
+    "quiet": true,
+    "restartable": "rs",
+
+    "watch": [
+        "src/",
+        "types/",
+        "package.json"
+    ],
+
+    "env": {
+        "AGIO_ENV": "dev"
+    }
+
+}

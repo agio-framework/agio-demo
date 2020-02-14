@@ -1,31 +1,31 @@
 {
-  "name": "agio-demo",
-  "version": "1.0.0",
-  "description": "A starter application using @agio/framework",
-  "main": "src/app.ts",
-  "license": "MIT",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "dependencies": {
-    "@agio/framework": "^1.1.0",
-    "joi": "^14.3.1",
-    "lodash": "^4.17.11",
-    "mysql2": "^1.6.5",
-    "nodemon": "^1.19.0"
-  },
-  "devDependencies": {
-    "@types/joi": "^14.3.3",
-    "@types/lodash": "^4.14.129",
-    "@types/node": "^12.0.1",
-    "ts-node": "^8.3.0",
-    "typescript": "^3.5.3"
-  },
-  "scripts": {
-    "start": "node dist/app.js",
-    "dev": "nodemon src/app.ts",
-    "build": "rm -rf dist && tsc"
-  }
+    "name": "agio-demo",
+    "version": "1.0.0",
+    "description": "A starter application using @agio/framework",
+    "main": "src/app.ts",
+    "license": "MIT",
+    "private": false,
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "@agio/framework": "1.2.0",
+        "joi": "^14.3.1",
+        "lodash": "^4.17.11",
+        "mysql2": "^2.1.0",
+        "nodemon": "^1.19.0"
+    },
+    "devDependencies": {
+        "@types/joi": "^14.3.3",
+        "@types/lodash": "^4.14.129",
+        "@types/node": "^12.0.1",
+        "ts-node": "^8.3.0",
+        "typescript": "^3.5.3"
+    },
+    "scripts": {
+        "dev": "nodemon",
+        "start": "node dist/app.js",
+        "build": "rm -rf dist && tsc"
+    }
 }

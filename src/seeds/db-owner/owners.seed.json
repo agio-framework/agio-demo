@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "5e404edb321d902684610a4e",
+        "name": "Luke Skywalker",
+        "city": "Ahch To"
+    },
+    {
+        "_id": "5e404ecc5b3152bc7a9100bd",
+        "name": "Anakin Skywalker",
+        "city": null
+    },
+    {
+        "_id": "5e404e6d3a9c9e6a7444ae30",
+        "name": "John Grogan",
+        "city": "Michigan"
+    }
+]

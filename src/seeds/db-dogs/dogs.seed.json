@@ -1,0 +1,23 @@
+[
+    {
+        "id": "e9e6e6f6-04d5-42a5-81a1-0149b4cba9e9",
+        "name": "C3 P Dog",
+        "bornAt": "1977-11-18T00:00:00.000Z",
+        "ownerId": "5e404edb321d902684610a4e",
+        "breedId": "62fdcd0b-54da-4d4b-bb24-559d9ddd1c44"
+    },
+    {
+        "id": "5da78d32-563d-4ddd-932c-78d2c1fa5e73",
+        "name": "R2 Dog 2",
+        "bornAt": null,
+        "ownerId": "5e404ecc5b3152bc7a9100bd",
+        "breedId": "62fdcd0b-54da-4d4b-bb24-559d9ddd1c44"
+    },
+    {
+        "id": "91efa43d-5c3f-40a6-9115-23be9be7ae6e",
+        "name": "Marley",
+        "bornAt": "2008-12-25T00:00:00.000Z",
+        "ownerId": "5e404e6d3a9c9e6a7444ae30",
+        "breedId": "2615929f-81d9-417f-81b1-746d3deda5d9"
+    }
+]
