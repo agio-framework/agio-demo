@@ -21,7 +21,7 @@
 
     "databases": {
         "db-dogs": {
-            "uri": "mysql://root:1234567890@localhost/dogs",
+            "uri": "mysql://root@localhost/dogs",
             "options": {
                 "logging": false,
                 "force": true
