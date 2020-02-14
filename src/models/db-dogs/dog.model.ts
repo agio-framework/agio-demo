@@ -39,14 +39,4 @@ import { SQLSchema, SQLDataTypes } from "@agio/framework/database";
         }
     }
 )
-export class LogModel {
-
-    public method() {
-        console.log('Eu sou um método de instância');
-    }
-
-    public static method() {
-        console.log('Eu sou um método estático');
-    }
-
-}
+export class LogModel {}
