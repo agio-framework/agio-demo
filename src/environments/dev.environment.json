@@ -1,8 +1,8 @@
 {
-    "production": false,
+    "production": true,
 
     "server": {
-        "host": "0.0.0.0",
+        "host": "localhost",
         "port": 8889,
         "ssl": {
             "enable": false,
@@ -20,9 +20,28 @@
     },
 
     "databases": {
-
+        "db-dogs": {
+            "uri": "mysql://root:1234567890@localhost/dogs",
+            "options": {
+                "logging": false,
+                "force": true
+            },
+            "seeds": {
+                "Dogs": "dogs.seed.json",
+                "DogBreeds": "dog-breeds.seed.json"
+            }
+        },
+        "db-owner": {
+            "uri": "mongodb://localhost:27017/db-owners",
+            "options": {
+                "useUnifiedTopology": true
+            },
+            "seeds": {
+                "Owners": "owners.seed.json"
+            }
+        }
     },
- 
+    
     "my-others-confs": {
 
     }
